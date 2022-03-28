@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_component"
+    app:startDestination="@id/halamanSatu">
+
+    <fragment
+        android:id="@+id/halamanSatu"
+        android:name="com.example.chapter4.HalamanSatu"
+        android:label="fragment_halaman_satu"
+        tools:layout="@layout/fragment_halaman_satu" >
+        <action
+            android:id="@+id/action_halamanSatu_to_halamanKedua"
+            app:destination="@id/halamanKedua" />
+    </fragment>
+    <fragment
+        android:id="@+id/halamanKedua"
+        android:name="com.example.chapter4.HalamanKedua"
+        android:label="fragment_halaman_kedua"
+        tools:layout="@layout/fragment_halaman_kedua" />
+</navigation>
